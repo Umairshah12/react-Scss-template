@@ -1,0 +1,55 @@
+@media (max-width: 700px) {
+  .hide-sm {
+    display: none;
+  }
+
+  .navbar {
+    display: block;
+    text-align: center;
+
+    ul {
+      text-align: center;
+      justify-content: center;
+    }
+
+    h1 {
+      margin-bottom: 0.7rem;
+    }
+  }
+
+  .dash-buttons {
+    flex-direction: column;
+  }
+
+  .profiles {
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+
+    ul {
+      display: none;
+    }
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .exp-edu {
+    flex-direction: column;
+  }
+
+  .repo {
+    flex-direction: column;
+  }
+
+  .post {
+    flex-direction: column;
+
+    & > div:nth-child(2) {
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,205 @@
+@import "config";
+@import "utilities";
+@import "forms";
+
+// Global Css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6rem;
+  background: #fff;
+  font-size: 1rem;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+li {
+  list-style: none;
+}
+
+.icon-m {
+  margin-right: 10px;
+}
+
+.mr-1 {
+  margin-right: 8px;
+}
+
+.ml-1 {
+  margin-left: 8px;
+}
+
+.dash-btn {
+  margin: 0.5rem;
+}
+
+// Navbar
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  border-bottom: solid 1px $primary-color;
+  opacity: 0.7;
+
+  ul {
+    display: flex;
+  }
+
+  a {
+    color: #fff;
+    padding: 0.45rem;
+    margin: 0 0.25rem;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+//Landing
+
+.landing {
+  // border: 2px solid red;
+  position: relative;
+  height: 100vh;
+  background: url("../images/img2.jpg") center center/cover no-repeat;
+
+  &-inner {
+    color: white;
+    display: flex;
+    height: 100%;
+    // border: 2px solid blue;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+// Profiles
+
+.profiles {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  align-items: center;
+  grid-gap: 2rem;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+
+  .profile {
+    img {
+      width: 70%;
+    }
+  }
+}
+
+// Single User Profile
+
+.profile-grid {
+  display: flex;
+  // border: 2px solid red;
+  flex-direction: column;
+
+  .profile-top {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    img {
+      width: 250px;
+    }
+
+    .icons a {
+      color: #fff;
+      margin: 0 0.3rem;
+
+      &:hover {
+        color: $dark-color;
+      }
+    }
+  }
+
+  .about-profile {
+    text-align: center;
+
+    .skills {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  .exp-edu {
+    display: flex;
+    gap: 12px;
+  }
+
+  .experiance-profile,
+  .education-profile {
+    & > div {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  .repo {
+    display: flex;
+    justify-content: space-between;
+    .repo-text {
+      flex-basis: 70%;
+    }
+    &-list {
+      flex-basis: 20%;
+    }
+  }
+}
+
+// Dashboard
+.dash-buttons {
+  display: flex;
+}
+
+// Posts
+
+.post {
+  display: flex;
+  grid-gap: 2rem;
+  align-items: center;
+
+  & > div:first-child {
+    text-align: center;
+  }
+
+  img {
+    width: 150px;
+  }
+}
+
+// mobile media queries
+@import "mobile";
