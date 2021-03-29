@@ -5,12 +5,12 @@ import { PostsData } from "../pages/Arrays";
 function SinglePost() {
   const [singlePostData, setSinglePostData] = useState();
   const { userId } = useParams();
-  console.log("USER id", PostsData);
+
   useEffect(() => {
     const res = PostsData.find((item) => item.id == userId);
     setSinglePostData(res);
   }, []);
-  console.log("SINGLE POST DATA", singlePostData);
+
   return (
     <section className="container">
       <div className="profile-grid my-1">

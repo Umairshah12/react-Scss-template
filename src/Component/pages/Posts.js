@@ -35,7 +35,7 @@ function Posts() {
               return (
                 <div className="post bg-white my-1 p-1" key={key}>
                   <div>
-                    <Link to="/">
+                    <Link to={`singlPost/${post.id}`}>
                       <img src={post.UserImg} className="round-img" />
                     </Link>
                     <h4>{post.userName}</h4>

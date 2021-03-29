@@ -125,9 +125,7 @@ function SingleUserProfile() {
 
             <div className="repo bg-white p-2 my-1">
               <div className="repo-text">
-                <h4>
-                  <Link to="">Repo Three</Link>
-                </h4>
+                <h4 className="text-primary">Repo One</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Aliquam at mauris egestas, ultricies odio nec, tristique
@@ -146,9 +144,7 @@ function SingleUserProfile() {
 
             <div className="repo bg-white p-2 my-1">
               <div className="repo-text">
-                <h4>
-                  <Link to="">Repo Three</Link>
-                </h4>
+                <h4 className="text-primary">Repo Two</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Aliquam at mauris egestas, ultricies odio nec, tristique
@@ -167,9 +163,7 @@ function SingleUserProfile() {
 
             <div className="repo bg-white p-2 my-1">
               <div className="repo-text">
-                <h4>
-                  <Link to="">Repo Three</Link>
-                </h4>
+                <h4 className="text-primary">Repo Three</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Aliquam at mauris egestas, ultricies odio nec, tristique
